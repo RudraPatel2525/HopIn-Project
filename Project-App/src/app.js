@@ -18,7 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/assets", express.static(path.join(__dirname, "..", "public", "assets")));
 app.use("/components", express.static(path.join(__dirname, "..", "public", "components")));
-app.use("/Logo", express.static(path.join(__dirname, "..", "..", "Logo")));
 
 app.get("/api/health", (req, res) => {
   res.json({
